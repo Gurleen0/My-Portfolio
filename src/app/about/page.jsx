@@ -19,17 +19,13 @@ const AboutPage = () => {
   return (
     <motion.div
       className="h-full"
-      initial={{ y: "-200vh" }}
+      initial={{ y: "-10vh" }}
       animate={{ y: "0%" }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1.5 }}
     >
-      {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
-        {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
-          {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-10 justify-center">
-            {/* BIOGRAPHY IMAGE */}
             <Image
               src="https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e53517d8becbf5fe24ff444_peep-11.svg"
               alt=""
@@ -37,16 +33,12 @@ const AboutPage = () => {
               height={112}
               className="w-28 h-28 rounded-full object-cover"
             />
-            {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">ABOUT ME</h1>
-            {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            I’m Gurleen Kaur Gill, a UI/UX designer and budding developer who loves turning “meh” into “wow!” With a creative eye and growing coding skills, I craft experiences that are as smooth as your morning coffee. I’m on a journey to master the art of code, and I believe that great design should make you smile. Let’s create something amazing together, one pixel at a time!
+            I am Gurleen Kaur Gill, a full-stack developer and aspiring software engineer. I build scalable web applications with clean, efficient code. Passionate about problem-solving and continuous learning, I am focused on mastering software development and creating impactful digital solutions.
             </p>
-            {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-            Still learning, still creating, and always curious.</span>
-            {/* BIOGRAPHY SCROLL SVG */}
+            Still learning, still creating, and always curious.</ span>
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -70,9 +62,7 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          {/* SKILLS CONTAINER */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
-            {/* SKILL TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
@@ -81,14 +71,13 @@ const AboutPage = () => {
             >
               SKILLS
             </motion.h1>
-            {/* SKILL LIST */}
             <motion.div
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                HTML
+                React.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tailwind CSS
@@ -97,43 +86,52 @@ const AboutPage = () => {
                 Javascript
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                React.js
+                Node.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-              C++
+                Express.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-              MySQL
+                Redux
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                UI/UX Designer
+                Typecript
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Figma
+              MongoDB
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Canva
+                MySQL
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Framer
+                Java
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Wireframing
+                Python
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Prototyping
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Graphic Designer
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Content Writing
+                C++
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Git
               </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                OOPs
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Data Structures
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Operating System
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Computer Networks
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                UI/UX Design
+              </div>
+
             </motion.div>
-            {/* SKILL SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -157,12 +155,10 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          {/* EXPERIENCE CONTAINER */}
           <div
             className="flex flex-col gap-12 justify-center pb-48"
             ref={experienceRef}
           >
-            {/* EXPERIENCE TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
@@ -171,105 +167,56 @@ const AboutPage = () => {
             >
               EXPERIENCE
             </motion.h1>
-            {/* EXPERIENCE LIST */}
             <motion.div
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               className=""
             >
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    UI/UX Design Intern
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                  I’ve crafted visually appealing designs and developed effective user interfaces.{""}
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-1 text-red-400 text-sm font-semibold">
-                    May 2024-July 2024
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Uniford Foundation
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
+              <div className="flex justify-between h-480">
+                <div className="w-1/2 ">
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Front-End Developer
                   </div>
-                  {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  I worked as a Front-End Developer, creating and managing the user interface for a patient portal.{" "}
+                  Built an assessment portal with an admin dashboard for automated result tracking, integrating MongoDB with React and Redux to support 150+ users. Developed interactive tasks and technical content to enhance learning engagement by 30%.                  </div>
+                  <div className="p-1 text-red-400 text-sm font-semibold">
+                    Sep 2024-Nov 2024
                   </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    June 2024-July 2024{" "}
-                  </div>
-                  {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    RDSSDF NGO
+                    IIT Delhi
                   </div>
                 </div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    {" "}
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    {" "}
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
+                <div className="w-1/6 flex justify-center ">
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
                 </div>
-                {/* RIGHT */}
                 <div className="w-1/3 "></div>
+              </div>
+              <div className="flex justify-between h-480">
+                <div className="w-4/5 "></div>
+                <div className="w-1/6 flex justify-center">
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                <div className="w-3/5 ">
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Full-Stack Developer
+                  </div>
+                  <div className="p-3 text-sm italic">
+                  Integrated a patient portal and admin dashboard for amyloidosis awareness using React, Redux, and MongoDB, increasing outreach by 15%.                 </div>
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    June 2024-July 2024
+                  </div>
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    RDSSDF & ASGI NGO
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>
         </div>
-        {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-10 z-30 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />
         </div>

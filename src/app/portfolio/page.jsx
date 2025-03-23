@@ -8,34 +8,26 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "My Portfolio Website",
-    desc: "This Next.js project, bootstrapped with create-next-app, showcases my skills in UI/UX design and front-end development. Using HTML, Tailwind CSS, and Framer Motion animations, I've crafted a dynamic and responsive portfolio that delivers a seamless user experience across all devices.",
-    img: "/myportfolio.png ",
-    link: "http://localhost:3000/portfolio",
+    title: "Rakumon",
+    desc: "Developed a personalized e-commerce platform with AI-powered recommendations, quick search, and social shopping features. Built an interactive and responsive UI using JavaScript, TypeScript, and Tailwind CSS.",
+    img: "/rakumon.png ",
+    link: "https://github.com/xanderex-sid/Rakumon",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "AI Shopping Assistant",
-    desc: "The AI Shopping Assistant reimagines online shopping through a UI/UX design that replaces the traditional search bar with an interactive AI chatbot. Focused on wireframing and prototyping, this design offers a personalized, engaging shopping experience with tailored fashion recommendations and advice, without involving technology implementation.",
-    img: "/aiassistant.jpg",
-    link: "https://www.figma.com/proto/7etBKqmIgBuWMkxK3DEpDA/Untitled?node-id=1-2&t=yfHOcqIgpgheBKuk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+    title: "ASGI Patient Portal",
+    desc: "Developed a full-stack patient and admin portal using React, Redux, and MongoDB. Implemented user registration, medical history storage, and a real-time admin dashboard with data visualization and Excel export.",
+    img: "/asgiportal.png",
+    link: "https://asgi-patientportal.netlify.app/",
   },
   {
     id: 3,
-    color: "from-violet-300 to-purple-300",
-    title: "Fauxica Apparel App",
-    desc: "Fauxica presents a premium apparel experience through UI/UX design, offering high-quality clothing without the designer price tag. This project focuses on wireframing and prototyping to deliver a luxury shopping experience that reflects the craftsmanship of high-end brands, while maintaining affordability.",
-    img: "/fauxica.png",
-    link: "https://www.figma.com/proto/kXp6jFzxJVVQxnpSkIl1EN/Untitled?t=dSgg666c47cRMbn6-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-3",
-  },
-  {
-    id: 4,
-    color: "from-purple-300 to-red-300",
-    title: "Mynstagram App",
-    desc: "Mynstagram leverages UI/UX design to enhance the Myntra shopping experience by integrating an interactive system for personalized outfit recommendations. Through wireframing and prototyping, the platform offers a seamless user experience for exploring and purchasing stylish outfits based on individual preferences.",
-    img: "/mynstagram1.png",
-    link: "https://www.figma.com/proto/ZMmOvb3sROI2Gf4XAOnL3i/E-commerce-Website-Template-(Freebie)-(Community)?node-id=20-2&t=9jpq5W1T3xtIDNBP-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=20%3A2&show-proto-sidebar=1",
+    color: "from-red-300 to-blue-300",
+    title: "My Portfolio Website",
+    desc: " developed a personal portfolio using Next.js, showcasing projects, skills, and experience with a dynamic and responsive UI.",
+    img: "/myportfolio.png ",
+    link: "http://localhost:2550/portfolio",
   },
 ];
 
@@ -68,7 +60,7 @@ const PortfolioPage = () => {
       <h1 className="text-6xl font-bold leading-tight">
         {item.title}
       </h1>
-      <div className="relative w-full h-[50vh]">
+      <div className="relative w-full h-[60vh]">
         <Image 
           src={item.img} 
           alt="" 
@@ -92,7 +84,7 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      <div className="w-screen h-screen flex flex-col gap-106 items-center justify-center text-center">
         <h1 className="text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
@@ -109,7 +101,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+                Full-Stack Developer . UI/UX Designer . 
               </textPath>
             </text>
           </motion.svg>

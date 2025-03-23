@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const links = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About" },
-  { url: "/portfolio", title: "Portfolio" },
+  { url: "/portfolio", title: "My Work" },
   { url: "/contact", title: "Contact" },
 ];
 
@@ -88,13 +88,15 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      {/* SOCIAL */}
       <div className="hidden md:flex gap-10 w-1/4" style={{ marginLeft: "2rem" }}>
       <Link href="https://github.com/Gurleen0">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
         <Link href="https://www.linkedin.com/in/gurleen-kaur-gill-1901a0279/">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="mailto:gill.gurleenkaur2004@gmail.com">
+          <Image src="/gmail.png" alt="" width={34} height={30} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
@@ -120,7 +122,7 @@ const Navbar = () => {
             className="w-10 h-1 bg-black rounded origin-left"
           ></motion.div>
         </button>
-        {/* MENU LIST */}
+        
         {open && (
           <motion.div
             variants={listVariants}
