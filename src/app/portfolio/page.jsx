@@ -10,7 +10,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Rakumon",
     desc: "Developed a personalized e-commerce platform with AI-powered recommendations, quick search, and social shopping features. Built an interactive and responsive UI using JavaScript, TypeScript, and Tailwind CSS.",
-    img: "/rakumon.png ",
+    img: "/rakumon.png",
     link: "https://github.com/xanderex-sid/Rakumon",
   },
   {
@@ -25,7 +25,7 @@ const items = [
     id: 3,
     color: "from-red-300 to-blue-300",
     title: "My Portfolio Website",
-    desc: " developed a personal portfolio using Next.js, showcasing projects, skills, and experience with a dynamic and responsive UI.",
+    desc: "Developed a personal portfolio using Next.js, showcasing projects, skills, and experience with a dynamic and responsive UI.",
     img: "/myportfolio.png ",
     link: "http://localhost:2550/portfolio",
   },
