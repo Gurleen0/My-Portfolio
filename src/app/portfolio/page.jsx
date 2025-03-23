@@ -26,7 +26,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "My Portfolio Website",
     desc: "Developed a personal portfolio using Next.js, showcasing projects, skills, and experience with a dynamic and responsive UI.",
-    img: "/myportfolio.png ",
+    img: "/myportfolio.png",
     link: "http://localhost:2550/portfolio",
   },
 ];
